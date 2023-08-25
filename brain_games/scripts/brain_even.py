@@ -10,7 +10,7 @@ def is_even(number):
 
 
 def brain_even(name):
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answers = 0
 
     while correct_answers < 3:
