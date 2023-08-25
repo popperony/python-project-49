@@ -36,6 +36,7 @@ def brain_calc(name):
 
 
 def main():
+    print('Welcome to the Brain Games!')
     name = welcome_user()
 
     brain_calc(name)

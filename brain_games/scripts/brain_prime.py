@@ -44,6 +44,7 @@ def brain_prime(name):
 
 
 def main():
+    print('Welcome to the Brain Games!')
     name = welcome_user()
 
     brain_prime(name)

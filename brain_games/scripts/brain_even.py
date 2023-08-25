@@ -33,6 +33,7 @@ def brain_even(name):
 
 
 def main():
+    print('Welcome to the Brain Games!')
     name = welcome_user()
 
     brain_even(name)

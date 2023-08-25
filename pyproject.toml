@@ -1,8 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
-authors = ["vadim_berezhnoy <vadim_berezhnoy@idpowers.com>"]
+authors = ["vadim_berezhnoy <gpopperony@gmail.com>"]
+repository = "https://github.com/popperony/python-project-49"
 readme = "README.md"
 packages = [
   { include = "brain_games" },
