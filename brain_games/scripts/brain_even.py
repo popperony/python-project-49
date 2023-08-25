@@ -1,5 +1,9 @@
 import random
 
+import prompt
+
+from brain_games.cli import welcome_user
+
 
 def is_even(number):
     return number % 2 == 0
@@ -12,7 +16,7 @@ def brain_even(name):
     while correct_answers < 3:
         number = random.randint(1, 100)
         print(f"Question: {number}")
-        user_answer = input("Your answer: ").lower()
+        user_answer = prompt.string("Your answer: ")
 
         if (user_answer == 'yes' and is_even(number)) or (
                 user_answer == 'no' and not is_even(number)):
@@ -26,3 +30,13 @@ def brain_even(name):
 
     if correct_answers == 3:
         print(f"Congratulations, {name}!")
+
+
+def main():
+    name = welcome_user()
+
+    brain_even(name)
+
+
+if __name__ == '__main__':
+    main()
