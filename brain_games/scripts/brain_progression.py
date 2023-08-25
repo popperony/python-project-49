@@ -21,7 +21,7 @@ def brain_progression(name):
         progression_length = random.randint(5, 10)
         hidden_index = random.randint(0, progression_length - 1)
 
-        progression, start, step = generate_progression(progression_length, hidden_index)
+        progression, start, step = generate_progression(progression_length, hidden_index)  # NOQA
         correct_answer = str(start + step * hidden_index)
 
         print("Question:", ' '.join(map(str, progression)))
