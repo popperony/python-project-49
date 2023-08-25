@@ -7,7 +7,7 @@ from brain_games.cli import welcome_user
 
 
 def brain_gcd(name):
-    print('Find the greatest common divisor of given numbers')
+    print('Find the greatest common divisor of given numbers.')
     correct_answers = 0
 
     while correct_answers < 3:
