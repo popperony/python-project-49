@@ -17,13 +17,12 @@ def brain_even(name):
         number = random.randint(1, 100)
         print(f"Question: {number}")
         user_answer = prompt.string("Your answer: ")
+        correct_answer = 'yes' if is_even(number) else 'no'
 
-        if (user_answer == 'yes' and is_even(number)) or (
-                user_answer == 'no' and not is_even(number)):
+        if user_answer == correct_answer:
             print("Correct!")
             correct_answers += 1
         else:
-            correct_answer = 'yes' if is_even(number) else 'no'
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")  # NOQA
             print(f"Let's try again, {name}!")
             break
